@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  padding: 10px;
+  border: 6px solid gold;
+  margin: 10px;
+
+  /* padding-top: 16px;
+  padding-right: 42px;
+  padding-bottom: 16px;
+  padding-left: 42px; */
+
+  /* padding: 16px 42px 16px 42px; */
+
+  /* padding: 16px 42px; */
+}
