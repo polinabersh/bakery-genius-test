@@ -10,31 +10,33 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./Images/logo.svg" alt="Логотип современной пекарни" />
-          </a>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Наши традиции</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Шеф-повара</a></li>
-            <li><a class="link" href="#formats-section">Форматы</a></li>
-            <li><a class="link" href="#contact-section">Контакты</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Заказать звонок</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="./index.html">
+              <img src="./Images/logo.svg" alt="Логотип современной пекарни" />
+            </a>
+            <ul class="header-menu">
+              <li>
+                <a class="link" href="#traditions-section">Наши традиции</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шеф-повара</a></li>
+              <li><a class="link" href="#formats-section">Форматы</a></li>
+              <li><a class="link" href="#contact-section">Контакты</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Заказать звонок</button>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">
-            <span class="accent">Современная</span> пекарня
+            <span class="accent">Сучасна</span> пекарня
           </h1>
         </div>
       </section>
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantages-list">
@@ -46,21 +48,27 @@
       </section>
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <h2 class="traditions-title section-title">Новый формат традиций</h2>
-          <p class="traditions-text">
-            <span class="brand uppercase">shop bakery</span> — это пекарня,
-            которая взяла все лучшее, и сохранила вкус традиционной выпечки и
-            натуральность ингридиентов.
-          </p>
-          <p class="traditions-text">
-            Мы работаем как самые известные сети —
-            <span class="brand">5 минут и заказ готов</span>. А еще у наших
-            пекарень стильный дизайн и высокое качество обслуживания!
-          </p>
-          <img
-            src="./Images/Mask-group.jpg"
-            alt="Мужчина пекарь смотрит на багеты с улыбкой"
-          />
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="traditions-title section-title">
+                Новый формат традиций
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">shop bakery</span> — это пекарня,
+                которая взяла все лучшее, и сохранила вкус традиционной выпечки
+                и натуральность ингридиентов.
+              </p>
+              <p class="traditions-text limited">
+                Мы работаем как самые известные сети —
+                <span class="brand">5 минут и заказ готов</span>. А еще у наших
+                пекарень стильный дизайн и высокое качество обслуживания!
+              </p>
+            </div>
+            <img
+              src="./Images/Mask-group.jpg"
+              alt="Мужчина пекарь смотрит на багеты с улыбкой"
+            />
+          </div>
         </div>
       </section>
       <section class="section" id="chefs-section">
@@ -95,9 +103,9 @@
       <section class="section" id="formats-section">
         <div class="container">
           <h2 class="formats-title section-title">Форматы</h2>
-          <ul>
+          <ul class="formats-list">
             <li>
-              <article>
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Walrus</h3>
                 <div class="format-text">
                   <p>Площадь: до 120 м2</p>
@@ -108,7 +116,7 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Horseshoe</h3>
                 <div class="format-text">
                   <p>Площадь: до 120 м2</p>
@@ -119,7 +127,7 @@
               </article>
             </li>
             <li>
-              <article>
+              <article class="format-card">
                 <h3 class="format-title" lang="en">Handlebar</h3>
                 <div class="format-text">
                   <p>Площадь: до 120 м2</p>
