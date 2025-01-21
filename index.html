@@ -76,35 +76,46 @@
           <h2 class="chefs-title section-title centered">
             Наши лучшие <span class="accent">шеф-повара</span>
           </h2>
-          <ul>
-            <li>
-              <article>
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chef-card">
                 <img
                   class="chef-photo"
                   src="./images/nastya.jpg"
                   alt="Nastya chef"
                 />
-                <h3 class="chef-title">Настя</h3>
-                <p>Привет, я Настя!</p>
-                <p>Уже 10 лет я воплощаю в жизнь интересные и вкусные идеи.</p>
-                <p>Я испеку для вас самые вкусные изделия!</p>
+                <div>
+                  <h3 class="chef-title">Настя</h3>
+                  <div class="chef-text">
+                    <p>Привет, я Настя!</p>
+                    <p>
+                      Уже 10 лет я воплощаю <br />в жизнь интересные и вкусные
+                      идеи.
+                    </p>
+                    <p>Я испеку для вас <br />самые вкусные изделия!</p>
+                  </div>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="chefs-item">
+              <article class="chef-card">
                 <img
                   class="chef-photo"
                   src="./images/vlad.jpg"
                   alt="Vlad chef"
                 />
-                <h3 class="chef-title">Влад</h3>
-                <p>Привет, я Влад!</p>
-                <p>
-                  Мой кондитерский стаж уже 18 лет. SHOP BAKERY — это наша
-                  любовь, которой мы делимся каждый раз с Вами через нашу
-                  выпечку!
-                </p>
-                <p>Я сделаю для Вас уникальную начинку на любой вкус!</p>
+                <div>
+                  <h3 class="chef-title">Влад</h3>
+                  <div class="chef-text">
+                    <p>Привет, я Влад!</p>
+                    <p>
+                      Мой кондитерский стаж уже 18 лет. SHOP BAKERY — это наша
+                      любовь, которой мы делимся каждый раз с Вами через нашу
+                      выпечку!
+                    </p>
+                    <p>Я сделаю для Вас уникальную начинку на любой вкус!</p>
+                  </div>
+                </div>
               </article>
             </li>
           </ul>
@@ -113,123 +124,139 @@
       <section class="section" id="formats-section">
         <div class="container">
           <h2 class="formats-title section-title centered">Форматы</h2>
-          <button class="carousel-button" type="button">
-            <svg width="16px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
-          <ul class="formats-list">
-            <li>
-              <article class="format-card">
-                <h3 class="format-title" lang="en">Walrus</h3>
-                <div class="format-text">
-                  <p>Площадь: до 120 м2</p>
-                  <p>Меню: расширенное меню</p>
-                  <p>Штат: 2 продавца-кассира, 2 пекаря, 2 официанта</p>
-                  <p>Посадочные места: есть</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="format-card">
-                <h3 class="format-title" lang="en">Horseshoe</h3>
-                <div class="format-text">
-                  <p>Площадь: до 120 м2</p>
-                  <p>Меню: расширенное меню</p>
-                  <p>Штат: 2 продавца-кассира, 2 пекаря, 2 официанта</p>
-                  <p>Посадочные места: есть</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="format-card">
-                <h3 class="format-title" lang="en">Handlebar</h3>
-                <div class="format-text">
-                  <p>Площадь: до 120 м2</p>
-                  <p>Меню: расширенное меню</p>
-                  <p>Штат: 2 продавца-кассира, 2 пекаря, 2 официанта</p>
-                  <p>Посадочные места: есть</p>
-                </div>
-              </article>
-            </li>
-          </ul>
-          <button class="carousel-button" type="button">
-            <svg width="16px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
+          <div class="formats-container">
+            <button class="carousel-button" type="button">
+              <svg width="16px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats-list">
+              <li>
+                <article class="format-card">
+                  <h3 class="format-title" lang="en">Walrus</h3>
+                  <div class="format-text">
+                    <p>Площадь: до 120 м2</p>
+                    <p>Меню: расширенное меню</p>
+                    <p>Штат: 2 продавца-кассира, 2 пекаря, 2 официанта</p>
+                    <p>Посадочные места: есть</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="format-card">
+                  <h3 class="format-title" lang="en">Horseshoe</h3>
+                  <div class="format-text">
+                    <p>Площадь: до 120 м2</p>
+                    <p>Меню: расширенное меню</p>
+                    <p>Штат: 2 продавца-кассира, 2 пекаря, 2 официанта</p>
+                    <p>Посадочные места: есть</p>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="format-card">
+                  <h3 class="format-title" lang="en">Handlebar</h3>
+                  <div class="format-text">
+                    <p>Площадь: до 120 м2</p>
+                    <p>Меню: расширенное меню</p>
+                    <p>Штат: 2 продавца-кассира, 2 пекаря, 2 официанта</p>
+                    <p>Посадочные места: есть</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg width="16px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title section-title">
-            Присоединяйтесь к сети пекарень
-          </h2>
-          <p>Заполни форму, чтобы мы связались с тобой!</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.1863327487654!2d30.4929545!3d50.4562548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2ses!4v1733254747325!5m2!1sru!2ses"
-            width="603"
-            height="595"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">
+                Присоединяйтесь к сети пекарень
+              </h2>
+              <p>Заполни форму, чтобы мы связались с тобой!</p>
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2540.1863327487654!2d30.4929545!3d50.4562548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2ses!4v1733254747325!5m2!1sru!2ses"
+              width="603"
+              height="595"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="./index.html">
-            <img src="./images/logo.svg" alt="Логотип современной пекарни" />
-          </a>
-          <ul>
-            <li><a class="link" href="#">Наши традиции</a></li>
-            <li><a class="link" href="#">Шеф-повара</a></li>
-            <li><a class="link" href="#">Форматы</a></li>
-            <li><a class="link" href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="address-link" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://maps.app.goo.gl/92hsNpKSMVQfGkDX8"
-                target="_blank"
-                >Украина, г. Киев, ул. Сечевых Стрельцов 54</a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" width="32px" height="32px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a href="./index.html">
+                <img
+                  src="./images/logo.svg"
+                  alt="Логотип современной пекарни"
+                />
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" width="32px" height="32px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a class="address-link" href="#" target="_blank"
-            >Политика конфиденциальности</a
-          >
-          <p class="address-copyright">&copy;2022 Данные защищены</p>
-        </address>
+            </div>
+            <ul class="footer-menu">
+              <li><a class="link" href="#">Наши традиции</a></li>
+              <li><a class="link" href="#">Шеф-повара</a></li>
+              <li><a class="link" href="#">Форматы</a></li>
+              <li><a class="link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/92hsNpKSMVQfGkDX8"
+                  target="_blank"
+                  >Украина, г. Киев, ул. Сечевых Стрельцов 54</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32px" height="32px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32px" height="32px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="address-link" href="#" target="_blank"
+                >Политика конфиденциальности</a
+              >
+              <p class="address-copyright">&copy;2022 Данные защищены</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
