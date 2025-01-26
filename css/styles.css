@@ -126,6 +126,13 @@ p {
 }
 
 /* Header */
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  padding: 32px;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -148,6 +155,7 @@ p {
 
 /* Hero section */
 .hero-section {
+  position: relative;
   padding: 272px 0;
   background-image: linear-gradient(
       102.76deg,
@@ -234,25 +242,32 @@ p {
   max-width: 710px;
 }
 
+.tradition-photo {
+  border-radius: 400px 400px 0px 0px;
+}
+
 /* Chefs section */
 .chefs-title {
+  position: relative;
   margin: 0 auto 80px;
-  max-width: 520px;
   width: 100%;
 }
 
-.chefs-title::before {
+.chefs-title::before,
+.chefs-title::after {
+  position: absolute;
+  bottom: 24px;
   content: "";
-  display: block;
   width: 352px;
   border: 2px solid var(--color-brand-light);
 }
 
+.chefs-title::before {
+  left: 0;
+}
+
 .chefs-title::after {
-  content: "";
-  display: block;
-  width: 352px;
-  border: 2px solid var(--color-brand-light);
+  right: 0;
 }
 
 .chef-title {
@@ -375,6 +390,34 @@ p {
 /* Footer */
 .footer {
   padding: 32px 0;
+  position: relative;
+  background-image: url("../images/footer-background.png");
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  background-repeat: no-repeat;
+  bottom: 0;
+  content: "";
+}
+
+.footer::before {
+  background-image: url(/Images/decor-bread-small.png);
+  width: 180px;
+  height: 120px;
+  left: 0;
+}
+
+.footer::after {
+  background-image: url(/Images/decor-bread-large.png);
+  width: 380px;
+  height: 187px;
+  right: 0;
 }
 
 .footer-container {
@@ -399,14 +442,6 @@ p {
   flex-grow: 1;
 }
 
-.footer {
-  background-image: url("../images/footer-background.png");
-  background-color: var(--color-primary-dark);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .address-link {
   color: var(--color-primary-light);
   font-weight: 300;
@@ -424,4 +459,38 @@ p {
 
 .address-copyright {
   font-size: 14px;
+}
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 500px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }

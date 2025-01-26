@@ -24,7 +24,9 @@
               <li><a class="link" href="#contact-section">Контакты</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Заказать звонок</button>
+          <button class="button modal-btn-open" type="button">
+            Заказать звонок
+          </button>
         </div>
       </div>
     </header>
@@ -65,6 +67,7 @@
               </p>
             </div>
             <img
+              class="tradition-photo"
               src="./images/Mask-group.jpg"
               alt="Мужчина пекарь смотрит на багеты с улыбкой"
             />
@@ -74,7 +77,7 @@
       <section class="section" id="chefs-section">
         <div class="container">
           <h2 class="chefs-title section-title centered">
-            Наши лучшие <span class="accent">шеф-повара</span>
+            Наши лучшие <br /><span class="accent">шеф-повара</span>
           </h2>
           <ul class="chefs-list">
             <li class="chefs-item">
@@ -259,5 +262,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
