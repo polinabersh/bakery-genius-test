@@ -168,7 +168,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16px" height="16px">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -211,10 +211,10 @@
               </a>
             </div>
             <ul class="footer-menu">
-              <li><a class="link" href="#">Наши традиции</a></li>
-              <li><a class="link" href="#">Шеф-повара</a></li>
-              <li><a class="link" href="#">Форматы</a></li>
-              <li><a class="link" href="#">Контакты</a></li>
+              <li><a class="link footer-link" href="#">Наши традиции</a></li>
+              <li><a class="link footer-link" href="#">Шеф-повара</a></li>
+              <li><a class="link footer-link" href="#">Форматы</a></li>
+              <li><a class="link footer-link" href="#">Контакты</a></li>
             </ul>
           </nav>
           <address class="footer-address">
@@ -237,20 +237,22 @@
                   >Украина, г. Киев, ул. Сечевых Стрельцов 54</a
                 >
               </li>
-              <li>
-                <a href="#">
-                  <svg class="address-icon" width="32px" height="32px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="address-icon" width="32px" height="32px">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
+              <div class="address-icons">
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="32px" height="32px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icon" width="32px" height="32px">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </div>
             </ul>
             <div class="address-info">
               <a class="address-link" href="#" target="_blank"
@@ -262,12 +264,11 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
       </div>
     </div>
-
     <script src="./js/modal.js"></script>
   </body>
 </html>

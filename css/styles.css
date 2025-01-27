@@ -45,6 +45,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 body {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
@@ -108,6 +109,7 @@ p {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .button:hover {
@@ -119,18 +121,24 @@ p {
 .link {
   color: var(--color-primary-light);
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 .link:hover {
   color: var(--color-brand);
 }
 
+.link.footer-link {
+  margin-bottom: 16px;
+}
+
 /* Header */
 header {
   position: absolute;
-  z-index: 1;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding: 32px;
+  padding-top: 32px;
 }
 
 .header-container {
@@ -155,7 +163,6 @@ header {
 
 /* Hero section */
 .hero-section {
-  position: relative;
   padding: 272px 0;
   background-image: linear-gradient(
       102.76deg,
@@ -344,6 +351,11 @@ header {
     rgba(49, 38, 26, 0.71) 72.92%,
     var(--color-primary-dark) 100%
   );
+  transition: transform 0.2s;
+}
+
+.format-card:hover {
+  transform: scale(1.03);
 }
 
 /* Carousel */
@@ -360,6 +372,10 @@ header {
   border: 1px solid var(--color-primary-dark);
   fill: var(--color-primary-dark);
   cursor: pointer;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 .carousel-button:hover {
@@ -447,6 +463,7 @@ header {
   font-weight: 300;
   font-size: 16px;
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .address-link:hover {
@@ -457,8 +474,14 @@ header {
   fill: var(--color-primary-light);
 }
 
+.address-icons {
+  display: flex;
+  gap: 22px;
+}
+
 .address-copyright {
   font-size: 14px;
+  color: var(--color-secondary-dark);
 }
 
 /* Modal */
@@ -471,8 +494,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 .backdrop.is-hidden {
@@ -483,8 +507,10 @@ header {
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  max-width: 880px;
+  max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
 }
