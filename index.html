@@ -184,6 +184,56 @@
                 Присоединяйтесь к сети пекарень
               </h2>
               <p>Заполни форму, чтобы мы связались с тобой!</p>
+              <form name="contact-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Имя</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Имя"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Электронная почта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Электронная почта"
+                  />
+                </div>
+
+                <button class="form-button button" type="submit">
+                  Заказать звонок
+                </button>
+                <p class="form-terms">
+                  Нажимая на кнопку, я соглашаюсь
+                  <a class="form-terms-link" href="#"
+                    >с политикой конфиденциальности</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -264,9 +314,61 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Заказать звонок</h2>
+        <p>Оставьте заявку и наш специалист свяжется с Вами!</p>
+        <form name="modal-form" autocomplete="off" novalidate>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Имя</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Имя"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Телефон</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Телефон"
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"
+              >Электронная почта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Электронная почта"
+            />
+          </div>
+
+          <button class="form-button button" type="submit">
+            Заказать звонок
+          </button>
+          <p class="form-terms">
+            Нажимая на кнопку, я соглашаюсь
+            <a class="form-terms-link" href="#"
+              >с политикой конфиденциальности</a
+            >
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -464,6 +464,7 @@ header {
   font-size: 16px;
   text-decoration: none;
   margin-bottom: 16px;
+  transition: color 0.2s;
 }
 
 .address-link:hover {
@@ -472,6 +473,11 @@ header {
 
 .address-icon {
   fill: var(--color-primary-light);
+  transition: fill 0.2s;
+}
+
+.address-icon:hover {
+  fill: var(--color-brand);
 }
 
 .address-icons {
@@ -511,12 +517,67 @@ header {
   height: 100%;
   max-width: 880px;
   max-height: 880px;
+  padding: 128px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+}
+
+/* Form */
+.form-field {
+  margin-bottom: 32px;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.form-input:focus {
+  border-color: var(--color-brand);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-secondary-dark);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.form-terms {
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form-terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
 }
