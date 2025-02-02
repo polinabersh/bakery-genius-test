@@ -195,6 +195,7 @@
                     id="user-name"
                     name="user-name"
                     placeholder="Имя"
+                    required
                   />
                 </div>
 
@@ -208,6 +209,7 @@
                     id="user-tel"
                     name="user-tel"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
 
@@ -221,6 +223,7 @@
                     id="user-email"
                     name="user-email"
                     placeholder="Электронная почта"
+                    required
                   />
                 </div>
 
@@ -319,7 +322,7 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Заказать звонок</h2>
         <p>Оставьте заявку и наш специалист свяжется с Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Имя</label
@@ -330,6 +333,9 @@
               id="user-name"
               name="user-name"
               placeholder="Имя"
+              required
+              minlength="2"
+              maxlength="20"
             />
           </div>
 
@@ -343,6 +349,7 @@
               id="user-tel"
               name="user-tel"
               placeholder="Телефон"
+              required
             />
           </div>
 
@@ -356,8 +363,21 @@
               id="user-email"
               name="user-email"
               placeholder="Электронная почта"
+              required
             />
           </div>
+
+          <!-- <div class="checkbox">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              id="terms-conditions"
+              name="terms-conditions"
+            />
+            <label class="checkbox-label" for="terms-conditions"
+              >Я соглашаюсь с политикой конфиденциальности</label
+            >
+          </div> -->
 
           <button class="form-button button" type="submit">
             Заказать звонок
