@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Современная пекарня</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header>
@@ -62,8 +62,8 @@
               </p>
               <p class="traditions-text limited">
                 Мы работаем как самые известные сети —
-                <span class="brand">5 минут и заказ готов</span>. А еще у наших
-                пекарень стильный дизайн и высокое качество обслуживания!
+                <span class="brand">5 минут и заказ готов</span>. <br />А еще у
+                наших пекарень стильный дизайн и высокое качество обслуживания!
               </p>
             </div>
             <img
@@ -136,6 +136,11 @@
             <ul class="formats-list">
               <li>
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/walrus-card.jpg"
+                    alt="Walrus format"
+                  />
                   <h3 class="format-title" lang="en">Walrus</h3>
                   <div class="format-text">
                     <p>Площадь: до 120 м2</p>
@@ -147,23 +152,33 @@
               </li>
               <li>
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/horseshoe-card.jpg"
+                    alt="Horseshoe format"
+                  />
                   <h3 class="format-title" lang="en">Horseshoe</h3>
                   <div class="format-text">
-                    <p>Площадь: до 120 м2</p>
-                    <p>Меню: расширенное меню</p>
-                    <p>Штат: 2 продавца-кассира, 2 пекаря, 2 официанта</p>
-                    <p>Посадочные места: есть</p>
+                    <p>Площадь: до 25 м2</p>
+                    <p>Меню: самые популярные позиции меню</p>
+                    <p>Штат: 2 продавца-кассира, 2 пекаря, 1 помощник пекаря</p>
+                    <p>Посадочные места: отсутствуют</p>
                   </div>
                 </article>
               </li>
               <li>
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/handlebar-card.jpg"
+                    alt="Handlebar format"
+                  />
                   <h3 class="format-title" lang="en">Handlebar</h3>
                   <div class="format-text">
-                    <p>Площадь: до 120 м2</p>
-                    <p>Меню: расширенное меню</p>
-                    <p>Штат: 2 продавца-кассира, 2 пекаря, 2 официанта</p>
-                    <p>Посадочные места: есть</p>
+                    <p>Площадь: до 15 м2</p>
+                    <p>Меню: самые популярные позиции меню</p>
+                    <p>Штат: 1 продавец-кассир, 1 пекарь, 1 помощник пекаря</p>
+                    <p>Посадочные места: отсутствуют</p>
                   </div>
                 </article>
               </li>
@@ -183,7 +198,9 @@
               <h2 class="contact-title section-title">
                 Присоединяйтесь к сети пекарень
               </h2>
-              <p>Заполни форму, чтобы мы связались с тобой!</p>
+              <p class="contact-text">
+                Заполни форму, чтобы мы связались с тобой!
+              </p>
               <form name="contact-form" autocomplete="off">
                 <div class="form-field">
                   <label class="form-label visually-hidden" for="user-name"
@@ -317,11 +334,13 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
-        <h2>Заказать звонок</h2>
-        <p>Оставьте заявку и наш специалист свяжется с Вами!</p>
+        <h2 class="form-title">Заказать звонок</h2>
+        <p class="form-text">
+          Оставьте заявку и наш специалист свяжется с Вами!
+        </p>
         <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"

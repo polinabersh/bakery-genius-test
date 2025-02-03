@@ -1,0 +1,13 @@
+.link {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: var(--color-brand);
+}
+
+.link.footer-link {
+    margin-bottom: 16px;
+}
