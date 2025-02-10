@@ -1,0 +1,43 @@
+.form-terms {
+    max-width: 220px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+      &__link {
+          color: var(--color-primary-dark);
+          text-underline-offset: 2px;
+      }
+}
+
+
+/* .checkbox {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.checkbox-input {
+  appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--color-brand);
+}
+
+.checkbox-label {
+  padding-left: 24px;
+}
+
+.checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 2px;
+  content: "";
+} */
