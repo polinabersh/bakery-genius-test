@@ -8,11 +8,11 @@
     cursor: pointer;
     font-weight: 600;
     transition: color 0.2s, background-color 0.2s;
-}
 
-.button:hover {
-    background-color: transparent;
-    color: var(--color-brand-dark);
+    &:hover {
+        background-color: transparent;
+        color: var(--color-brand-dark);
+      }
 }
 
 /* .button:disabled {
