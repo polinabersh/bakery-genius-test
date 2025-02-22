@@ -17,7 +17,7 @@
         <div class="header__container">
           <nav class="header__nav">
             <a href="./index.html">
-              <img src="./Images/logo.svg" alt="Логотип современной пекарни" />
+              <img src="./images/logo.svg" alt="Логотип современной пекарни" />
             </a>
             <ul class="header__menu">
               <li>
@@ -33,13 +33,47 @@
           </button>
           <button class="header__burger menu-btn-open" type="button">
             <svg class="header__icon-menu" width="24px" height="24px">
-              <use href="./Images/icons.svg#icon-menu"></use>
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
           <div class="mobile-menu">
             <button class="mobile-menu__btn-close menu-btn-close" type="button">
-              Close
+              <svg class="close-button" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-close-button"></use>
+              </svg>
             </button>
+            <nav class="mobile-menu__nav">
+              <div class="mobile-menu__logo">
+                <a href="./index.html">
+                  <img
+                    src="./images/logo-dark.svg"
+                    alt="Логотип современной пекарни"
+                  />
+                </a>
+              </div>
+              <ul class="mobile-menu__menu">
+                <li>
+                  <a class="link mobile-menu__link" href="#traditions-section"
+                    >Наши традиции</a
+                  >
+                </li>
+                <li>
+                  <a class="link mobile-menu__link" href="#chefs-section"
+                    >Шеф-повара</a
+                  >
+                </li>
+                <li>
+                  <a class="link mobile-menu__link" href="#formats-section"
+                    >Форматы</a
+                  >
+                </li>
+                <li>
+                  <a class="link mobile-menu__link" href="#contact-section"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -97,8 +131,8 @@
             </div>
             <img
               class="traditions-section__image"
-              srcset="./Images/Mask-group.jpg 1x, ./Images/Mask-group@2x.jpg 2x"
-              src="./Images/Mask-group.jpg"
+              srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x"
+              src="./images/baker-man.jpg."
               alt="Мужчина пекарь смотрит на багеты с улыбкой"
             />
           </div>
@@ -116,7 +150,8 @@
               <article class="chef-card">
                 <img
                   class="chef-card__photo"
-                  src="./Images/nastya.jpg"
+                  srcset="./images/nastya.jpg 1x, ./images/nastya@2x.jpg 2x"
+                  src="./images/nastya.jpg"
                   alt="Nastya chef"
                 />
                 <div>
@@ -136,7 +171,8 @@
               <article class="chef-card">
                 <img
                   class="chef-card__photo"
-                  src="./Images/vlad.jpg"
+                  srcset="./images/vlad.jpg 1x, ./images/vlad@2x.jpg 2x"
+                  src="./images/vlad.jpg"
                   alt="Vlad chef"
                 />
                 <div>
@@ -169,7 +205,7 @@
               type="button"
             >
               <svg width="16px" height="16px">
-                <use href="./Images/icons.svg#icon-arrow"></use>
+                <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
             <div class="formats-section__container swiper-container">
@@ -178,7 +214,11 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./Images/walrus-card.jpg"
+                      srcset="
+                        ./images/walrus-card.jpg    1x,
+                        ./images/walrus-card@2x.jpg 2x
+                      "
+                      src="./images/walrus-card.jpg"
                       alt="Walrus format"
                     />
                     <h3 class="format-card__title" lang="en">Walrus</h3>
@@ -194,7 +234,11 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./Images/horseshoe-card.jpg"
+                      srcset="
+                        ./images/horseshoe-card.jpg    1x,
+                        ./images/horseshoe-card@2x.jpg 2x
+                      "
+                      src="./images/horseshoe-card.jpg"
                       alt="Horseshoe format"
                     />
                     <h3 class="format-card__title" lang="en">Horseshoe</h3>
@@ -214,7 +258,11 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./Images/handlebar-card.jpg"
+                      srcset="
+                        ./images/handlebar-card.jpg    1x,
+                        ./images/handlebar-card@2x.jpg 2x
+                      "
+                      src="./images/handlebar-card.jpg"
                       alt="Handlebar format"
                     />
                     <h3 class="format-card__title" lang="en">Handlebar</h3>
@@ -234,7 +282,11 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./Images/walrus-card.jpg"
+                      srcset="
+                        ./images/walrus-card.jpg    1x,
+                        ./images/walrus-card@2x.jpg 2x
+                      "
+                      src="./images/walrus-card.jpg"
                       alt="Walrus format"
                     />
                     <h3 class="format-card__title" lang="en">Walrus</h3>
@@ -250,7 +302,11 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./Images/horseshoe-card.jpg"
+                      srcset="
+                        ./images/horseshoe-card.jpg    1x,
+                        ./images/horseshoe-card@2x.jpg 2x
+                      "
+                      src="./images/horseshoe-card.jpg"
                       alt="Horseshoe format"
                     />
                     <h3 class="format-card__title" lang="en">Horseshoe</h3>
@@ -270,7 +326,11 @@
                   <article class="format-card">
                     <img
                       class="format-card__image"
-                      src="./Images/handlebar-card.jpg"
+                      srcset="
+                        ./images/handlebar-card.jpg    1x,
+                        ./images/handlebar-card@2x.jpg 2x
+                      "
+                      src="./images/handlebar-card.jpg"
                       alt="Handlebar format"
                     />
                     <h3 class="format-card__title" lang="en">Handlebar</h3>
@@ -299,7 +359,7 @@
               type="button"
             >
               <svg width="16px" height="16px">
-                <use href="./Images/icons.svg#icon-arrow"></use>
+                <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
@@ -310,7 +370,7 @@
           <div class="contact-section__container">
             <div class="contact-section__form">
               <h2 class="contact-section__title section__title">
-                Присоединяйтесь к сети пекарень
+                Присоединяйся к сети пекарень
               </h2>
               <p class="contact-section__text">
                 Заполни форму, чтобы мы связались с тобой!
@@ -361,7 +421,7 @@
                 <button class="contact-section__button button" type="submit">
                   Заказать звонок
                 </button>
-                <p class="form-terms">
+                <p class="contact-section__form-terms form-terms">
                   Нажимая на кнопку, я соглашаюсь
                   <a class="form-terms__link" href="#"
                     >с политикой конфиденциальности</a
@@ -387,16 +447,30 @@
             <div class="footer__logo">
               <a href="./index.html">
                 <img
-                  src="./Images/logo.svg"
+                  src="./images/logo.svg"
                   alt="Логотип современной пекарни"
                 />
               </a>
             </div>
             <ul class="footer__menu">
-              <li><a class="link footer__link" href="#">Наши традиции</a></li>
-              <li><a class="link footer__link" href="#">Шеф-повара</a></li>
-              <li><a class="link footer__link" href="#">Форматы</a></li>
-              <li><a class="link footer__link" href="#">Контакты</a></li>
+              <li>
+                <a class="link footer__link" href="#traditions-section"
+                  >Наши традиции</a
+                >
+              </li>
+              <li>
+                <a class="link footer__link" href="#chefs-section"
+                  >Шеф-повара</a
+                >
+              </li>
+              <li>
+                <a class="link footer__link" href="#formats-section">Форматы</a>
+              </li>
+              <li>
+                <a class="link footer__link" href="#contact-section"
+                  >Контакты</a
+                >
+              </li>
             </ul>
           </nav>
           <address class="footer__address">
@@ -429,7 +503,7 @@
                       width="32px"
                       height="32px"
                     >
-                      <use href="./Images/icons.svg#icon-facebook"></use>
+                      <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -440,7 +514,7 @@
                       width="32px"
                       height="32px"
                     >
-                      <use href="./Images/icons.svg#icon-instagram"></use>
+                      <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -461,7 +535,9 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">
-          Close
+          <svg class="close-button" width="16px" height="16px">
+            <use href="./images/icons.svg#icon-close-button"></use>
+          </svg>
         </button>
         <h2 class="modal__title">Заказать звонок</h2>
         <p class="modal__text">

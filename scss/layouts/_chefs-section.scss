@@ -33,11 +33,12 @@
     &__list {
        display: flex;
        flex-direction: column;
-       gap: 20px;
+       padding-left: 8px;
+       gap: 40px;
 
         @media screen and (min-width: $bp-desktop) {
             flex-direction: row;
-            gap: 40px 30px;
+            gap: 40px;
         }
     }
 

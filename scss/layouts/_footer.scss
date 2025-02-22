@@ -1,32 +1,51 @@
 .footer {
     padding: 32px 0;
     position: relative;
-    background-image: url("../Images/footer-background.png");
+    background-image: url("../images/footer-background.png");
     background-color: var(--color-primary-dark);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
+    @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/footer-background@2x.png");
+    }
+
     &::before,
     &::after {
         position: absolute;
         background-repeat: no-repeat;
-        bottom: 0;
         content: "";
     }
     
     &::before {
-        background-image: url(/Images/decor-bread-small.png);
-        width: 180px;
-        height: 120px;
+        background-image: url(/images/decor-bread-mobile.png);
+        width: 95px;
+        height: 195px;
         left: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+            background-image: url(/images/decor-bread-small.png);
+            width: 180px;
+            height: 120px;
+            bottom: 0;
+        }
     }
     
     &::after {
-        background-image: url(/Images/decor-bread-large.png);
-        width: 380px;
-        height: 187px;
+        background-image: url(/images/decor-bread-mobile-small.png);
+        width: 100px;
+        height: 90px;
         right: 0;
+        bottom: 0;
+        
+        @media screen and (min-width: $bp-tablet) {
+            background-image: url(/images/decor-bread-large.png);
+            width: 380px;
+            height: 187px;
+        }
     }
 
     &__container {
@@ -40,7 +59,12 @@
     }
 
     &__link {
+        font-size: 14px;
         margin-bottom: 16px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 16px;
+        }
     }
 
     &__nav,
@@ -62,6 +86,14 @@
         flex-grow: 1;
     }
 
+    &__logo {
+        margin-bottom: 32px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 0;
+        }
+    }
+
     &__address-list,
     &__address-info {
         flex-grow: 1;
@@ -70,10 +102,14 @@
     &__address-link {
         color: var(--color-primary-light);
         font-weight: 300;
-        font-size: 16px;
+        font-size: 14px;
         text-decoration: none;
         margin-bottom: 16px;
         transition: color 0.2s;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 16px;
+        }
 
         &:hover {
             color: var(--color-brand);

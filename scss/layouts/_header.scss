@@ -11,8 +11,12 @@
 
      &__container {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           gap: 40px;
+
+          @media screen and (min-width: $bp-desktop) {
+               align-items: center;
+          }
      }
      
      &__nav {
