@@ -21,13 +21,13 @@
     }
     
     &::before {
-        background-image: url(/images/decor-bread-mobile.png);
+        background-image: url("../images/decor-bread-mobile.png");
         width: 95px;
         height: 195px;
         left: 0;
 
         @media screen and (min-width: $bp-tablet) {
-            background-image: url(/images/decor-bread-small.png);
+            background-image: url("../images/decor-bread-small.png");
             width: 180px;
             height: 120px;
             bottom: 0;
@@ -35,14 +35,14 @@
     }
     
     &::after {
-        background-image: url(/images/decor-bread-mobile-small.png);
+        background-image: url("../images/decor-bread-mobile-small.png");
         width: 100px;
         height: 90px;
         right: 0;
         bottom: 0;
         
         @media screen and (min-width: $bp-tablet) {
-            background-image: url(/images/decor-bread-large.png);
+            background-image: url("../images/decor-bread-large.png");
             width: 380px;
             height: 187px;
         }
